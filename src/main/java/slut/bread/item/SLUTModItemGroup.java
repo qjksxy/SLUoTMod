@@ -11,7 +11,7 @@ import slut.bread.SLUTMod;
 
 public class SLUTModItemGroup {
     public static void registerClass() {
-        SLUTMod.LOGGER.debug("Registering mod item group for" + SLUTMod.MOD_ID);
+        SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + SLUTModItemGroup.class.getName());
     }
 
     public static final ItemGroup SLUT_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -20,6 +20,7 @@ public class SLUTModItemGroup {
                     icon(() -> new ItemStack(SLUTModItems.CITRINE)).entries((displayContext, entries) -> {
                         // 在下处列出需要添加到此物品栏内的物品
                         entries.add(SLUTModItems.CITRINE);
+                        entries.add(SLUTModItems.SLUT);
                     }).build());
 
 }

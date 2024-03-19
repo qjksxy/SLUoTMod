@@ -12,7 +12,7 @@ import slut.bread.SLUTMod;
 public class SLUTModItems {
     // 在 SLUTMod.onInitialize() 方法中调用以加载此类
     public static void registerClass() {
-        SLUTMod.LOGGER.debug("Registering mod items for" + SLUTMod.MOD_ID);
+        SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + SLUTModItems.class.getName());
     }
 
     public static Item registerItem(String name, Item item) {
@@ -20,7 +20,18 @@ public class SLUTModItems {
                 new Identifier(SLUTMod.MOD_ID, name), item);
     }
 
-    // 在下处添加物品
-    public static final Item CITRINE = registerItem("citrine",
+    /**
+     * 在下处添加物品，添加物品步骤：** name 不要大写 **
+     * 1. 在下处创建 public static final Item 对象
+     * 2. 在类 SLUTModItemGroup 中，将物品添加到合适的物品组中
+     * 3. 在 resources/.../lang 中，添加对应语言文件
+     * 4. 在 resources/.../models/item 中，创建说明文件
+     * 5. 在 resources/.../textures/item 中，创建材质图片。
+     */
+    // 青金石
+    public static final Item CITRINE = registerItem("item_citrine",
+            new Item(new FabricItemSettings()));
+    // SLUT 徽章
+    public static final Item SLUT = registerItem("item_slut",
             new Item(new FabricItemSettings()));
 }
