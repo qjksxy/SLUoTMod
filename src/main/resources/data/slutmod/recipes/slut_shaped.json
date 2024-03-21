@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WR ",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "tag": "minecraft:logs"
+    },
+    "R": {
+      "item": "slutmod:item_citrine"
+    }
+  },
+  "result": {
+    "item": "slutmod:item_slut",
+    "count": 4
+  }
+}

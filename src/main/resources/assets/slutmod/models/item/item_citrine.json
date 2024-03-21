@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "slutmod:item/citrine"
+    "layer0": "slutmod:item/item_citrine"
   }
 }
