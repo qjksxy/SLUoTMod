@@ -28,7 +28,7 @@ public class SLUTModItems {
      * 4. 在 resources/.../models/item 中，创建说明文件
      * 5. 在 resources/.../textures/item 中，创建材质图片。
      */
-    // 青金石
+    // 黄水晶 万能的黄水晶，只能通过创造模式获得，可以用来合成其他材料
     public static final Item CITRINE = registerItem("item_citrine",
             new Item(new FabricItemSettings()));
     // SLUT 徽章
