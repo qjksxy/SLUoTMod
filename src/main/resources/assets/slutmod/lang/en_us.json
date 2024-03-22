@@ -1,5 +1,14 @@
 {
   "itemGroup.slutmod.slut_group": "SLUTMod groups",
   "item.slutmod.item_citrine": "Citrine",
-  "item.slutmod.item_slut": "SLUT"
+  "item.slutmod.item_slut": "SLUT",
+  "item.slutmod.item_zom_1": "zombie card 1",
+  "item.slutmod.item_zom_2": "zombie card 2",
+  "item.slutmod.item_zom_3": "zombie card 3",
+  "item.slutmod.item_zom_4": "zombie card 4",
+  "item.slutmod.item_zom_5": "zombie card 5",
+  "item.slutmod.item_zom_6": "zombie card 6",
+  "item.slutmod.item_zom_7": "zombie card 7",
+  "item.slutmod.item_zom_8": "zombie card 8",
+  "item.slutmod.item_zom_9": "zombie card 9"
 }
