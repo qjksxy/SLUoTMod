@@ -23,7 +23,16 @@ public class SLUTModItemGroup {
             new Identifier(SLUTMod.MOD_ID, "slut_group"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.slutmod.slut_group")).
                     icon(() -> new ItemStack(SLUTModItems.SLUT)).entries((displayContext, entries) -> {
-                        // 在下处列出需要添加到此物品栏内的物品
+                        // 在此处将物品添加到物品组
+                        entries.add(SLUTModItems.ZOM_1);
+                        entries.add(SLUTModItems.ZOM_2);
+                        entries.add(SLUTModItems.ZOM_3);
+                        entries.add(SLUTModItems.ZOM_4);
+                        entries.add(SLUTModItems.ZOM_5);
+                        entries.add(SLUTModItems.ZOM_6);
+                        entries.add(SLUTModItems.ZOM_7);
+                        entries.add(SLUTModItems.ZOM_8);
+                        entries.add(SLUTModItems.ZOM_9);
                         entries.add(SLUTModItems.CITRINE);
                         entries.add(SLUTModItems.SLUT);
                     }).build());
