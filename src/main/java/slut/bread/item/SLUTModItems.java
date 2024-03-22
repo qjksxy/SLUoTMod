@@ -34,4 +34,24 @@ public class SLUTModItems {
     // SLUT 徽章
     public static final Item SLUT = registerItem("item_slut",
             new Item(new FabricItemSettings()));
+
+    // 僵尸系列卡牌
+    public static final Item ZOM_1 = registerItem("item_zom_1",
+            new Item(new FabricItemSettings()));
+    public static final Item ZOM_2 = registerItem("item_zom_2",
+            new Item(new FabricItemSettings()));
+    public static final Item ZOM_3 = registerItem("item_zom_3",
+            new Item(new FabricItemSettings()));
+    public static final Item ZOM_4 = registerItem("item_zom_4",
+            new Item(new FabricItemSettings()));
+    public static final Item ZOM_5 = registerItem("item_zom_5",
+            new Item(new FabricItemSettings()));
+    public static final Item ZOM_6 = registerItem("item_zom_6",
+            new Item(new FabricItemSettings()));
+    public static final Item ZOM_7 = registerItem("item_zom_7",
+            new Item(new FabricItemSettings()));
+    public static final Item ZOM_8 = registerItem("item_zom_8",
+            new Item(new FabricItemSettings()));
+    public static final Item ZOM_9 = registerItem("item_zom_9",
+            new Item(new FabricItemSettings()));
 }
