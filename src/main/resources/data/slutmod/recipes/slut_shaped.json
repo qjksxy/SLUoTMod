@@ -1,20 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "WWW",
-    "WR ",
-    "WWW"
-  ],
-  "key": {
-    "W": {
-      "tag": "minecraft:logs"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
     },
-    "R": {
-      "item": "slutmod:item_citrine"
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:cherry_log"
     }
-  },
+  ],
   "result": {
     "item": "slutmod:item_slut",
-    "count": 4
+    "count": 1
   }
 }
