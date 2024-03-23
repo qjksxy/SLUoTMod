@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "slut_mod:item_zom_1"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "slut_mod:item_zom_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "slut_mod:item_zom_3"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "slut_mod:item_zom_4"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "slut_mod:item_zom_5"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "slut_mod:item_zom_6"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "slut_mod:item_zom_7"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "slut_mod:item_zom_8"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "slut_mod:item_zom_9"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}
