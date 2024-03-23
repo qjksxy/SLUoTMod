@@ -23,7 +23,7 @@ public class SLUTModItems {
         SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + SLUTModItems.class.getName());
     }
 
-    public static Item registerItem(String name, Item item) {
+    private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM,
                 new Identifier(SLUTMod.MOD_ID, name), item);
     }

@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import slut.bread.block.SLUTModBlocks;
 import slut.bread.item.SLUTModItemGroup;
 import slut.bread.item.SLUTModItems;
 
@@ -12,7 +13,7 @@ public class SLUTMod implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	// 模组 ID
-    public static final String MOD_ID = "slutmod";
+    public static final String MOD_ID = "slut_mod";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
@@ -24,6 +25,7 @@ public class SLUTMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		SLUTModItems.registerClass();
 		SLUTModItemGroup.registerClass();
+		SLUTModBlocks.registerClass();
 
 	}
 }

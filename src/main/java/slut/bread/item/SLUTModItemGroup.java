@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import slut.bread.SLUTMod;
+import slut.bread.block.SLUTModBlocks;
 
 /**
  * 物品组类
@@ -21,7 +22,7 @@ public class SLUTModItemGroup {
     // 创建物品组，使用物品 SLUTModItems.SLUT 作为图标
     public static final ItemGroup SLUT_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SLUTMod.MOD_ID, "slut_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemGroup.slutmod.slut_group")).
+            FabricItemGroup.builder().displayName(Text.translatable("itemGroup.slut_mod.slut_group")).
                     icon(() -> new ItemStack(SLUTModItems.SLUT)).entries((displayContext, entries) -> {
                         // 在此处将物品添加到物品组
                         entries.add(SLUTModItems.ZOM_1);
@@ -35,6 +36,7 @@ public class SLUTModItemGroup {
                         entries.add(SLUTModItems.ZOM_9);
                         entries.add(SLUTModItems.CITRINE);
                         entries.add(SLUTModItems.SLUT);
+                        entries.add(SLUTModBlocks.CARD_CASE_0);
                     }).build());
 
 }
