@@ -13,21 +13,11 @@ import slut.bread.SLUTMod;
  * 添加物品步骤：<br><b>注意：避免 name 以及相关文件名大写</b><br>
  * 1. 在本类中创建物品对应的 public static final Item 对象<br>
  * 2. 在类 SLUTModItemGroup 中，将物品添加到合适的物品组<br>
- * 3. 在 resources/.../lang 下的 json 文件中，添加物品的游戏内名称<br>
- * 4. 在 resources/.../models/item 中，创建说明文件<br>
- * 5. 在 resources/.../textures/item 中，创建材质图片
+ * 3. 在 resources/.../lang/ 下的 json 文件中，添加物品的游戏内名称<br>
+ * 4. 在 resources/.../models/item/ 中，创建说明文件<br>
+ * 5. 在 resources/.../textures/item/ 中，创建材质图片
  */
 public class SLUTModItems {
-    // 在 SLUTMod.onInitialize() 方法中调用以加载此类
-    public static void registerClass() {
-        SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + SLUTModItems.class.getName());
-    }
-
-    private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM,
-                new Identifier(SLUTMod.MOD_ID, name), item);
-    }
-
     // 黄水晶 测试用
     public static final Item CITRINE = registerItem("item_citrine",
             new Item(new FabricItemSettings()));
@@ -54,4 +44,16 @@ public class SLUTModItems {
             new Item(new FabricItemSettings()));
     public static final Item ZOM_9 = registerItem("item_zom_9",
             new Item(new FabricItemSettings()));
+
+    /*
+     ***** 下列方法的用途和实现无需关心 *****
+     */
+    public static void registerClass() {
+        SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + SLUTModItems.class.getName());
+    }
+
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM,
+                new Identifier(SLUTMod.MOD_ID, name), item);
+    }
 }
