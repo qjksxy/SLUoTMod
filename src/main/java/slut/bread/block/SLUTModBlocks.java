@@ -7,12 +7,13 @@ import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.server.command.EffectCommand;
 import net.minecraft.util.Identifier;
 import slut.bread.SLUTMod;
 
 /**
  * 在此类中定义所有方块（Blocks）<br>
- * 添加方块步骤：<br><b>注意：避免 name 以及相关文件名大写</b><br>
+ * 添加方块步骤：<br><b>注意：避免 name 以及相关文件名大写；方块对应的物品会自动创建，无需再手动添加</b><br>
  * 1. 在本类中创建物品对应的 public static final Block 对象<br>
  * 2. 在类 SLUTModItemGroup 中，将方块添加到合适的物品组<br>
  * 3. 在 resources/.../lang/ 下的 json 文件中，添加方块的游戏内名称<br>

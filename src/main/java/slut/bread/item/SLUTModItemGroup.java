@@ -37,6 +37,7 @@ public class SLUTModItemGroup {
                         entries.add(SLUTModItems.CITRINE);
                         entries.add(SLUTModItems.SLUT);
                         entries.add(SLUTModBlocks.CARD_CASE_0);
+                        entries.add(SLUTModItems.SiWangZhiWu);
                     }).build());
 
 }
