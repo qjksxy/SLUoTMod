@@ -2,6 +2,8 @@ package slut.bread.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -24,6 +26,9 @@ public class SLUTModItems {
     // SLUT 徽章
     public static final Item SLUT = registerItem("item_slut",
             new Item(new FabricItemSettings()));
+
+    public static final Item SiWangZhiWu = registerItem("item_siwangzhiwu",
+            new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings()));
 
     // 僵尸系列卡牌
     public static final Item ZOM_1 = registerItem("item_zom_1",
