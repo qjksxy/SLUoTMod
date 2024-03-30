@@ -27,7 +27,10 @@ public class SLUTModItems {
     public static final Item SLUT = registerItem("item_slut",
             new Item(new FabricItemSettings()));
 
-    public static final Item SiWangZhiWu = registerItem("item_siwangzhiwu",
+    public static final Item SIWANGZHIWU = registerItem("item_siwangzhiwu",
+            new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings()));
+
+    public static final Item JINGSHUILIUYONG = registerItem("item_jingshuiliuyong",
             new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings()));
 
     // 僵尸系列卡牌

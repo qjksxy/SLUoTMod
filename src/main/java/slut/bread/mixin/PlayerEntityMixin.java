@@ -9,11 +9,11 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import slut.bread.entity.effect.SLUTModStatusEffects;
 import slut.bread.item.SLUTModItems;
 
 @Mixin(PlayerEntity.class)
@@ -23,17 +23,17 @@ public abstract class PlayerEntityMixin {
         PlayerEntity playerEntity = (PlayerEntity) (Object) this;
         ItemStack itemStack = playerEntity.getEquippedStack(EquipmentSlot.MAINHAND);
         Item item = itemStack.getItem();
-        boolean isWither = source.isOf(DamageTypes.WITHER);
         // 只有其他生物造成的伤害才会触发，摔落伤害、岩浆伤害等不会触发
         boolean attackByLivingEntity = source.getAttacker() instanceof LivingEntity;
-        if (item == SLUTModItems.SiWangZhiWu && !isWither && attackByLivingEntity) {
-            int duration = 0;
-            if (playerEntity.hasStatusEffect(StatusEffects.WITHER)) {
-                StatusEffectInstance statusEffect = playerEntity.getStatusEffect(StatusEffects.WITHER);
+        if (item == SLUTModItems.SIWANGZHIWU && attackByLivingEntity) {
+            playerEntity.damage(source, Math.min(amount, 1.0f));
+            int duration = 5;
+            if (playerEntity.hasStatusEffect(SLUTModStatusEffects.SIWANG)) {
+                StatusEffectInstance statusEffect = playerEntity.getStatusEffect(SLUTModStatusEffects.SIWANG);
                 assert statusEffect != null;
-                duration = statusEffect.getDuration();
+                duration += statusEffect.getDuration();
             }
-            playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, (int)(duration + amount * 20), 0));
+            playerEntity.addStatusEffect(new StatusEffectInstance(SLUTModStatusEffects.SIWANG, (int)(duration + amount * 20), 1));
             ci.cancel();
         }
     }

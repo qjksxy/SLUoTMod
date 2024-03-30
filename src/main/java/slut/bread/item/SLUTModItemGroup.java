@@ -3,6 +3,7 @@ package slut.bread.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.MilkBucketItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -37,7 +38,8 @@ public class SLUTModItemGroup {
                         entries.add(SLUTModItems.CITRINE);
                         entries.add(SLUTModItems.SLUT);
                         entries.add(SLUTModBlocks.CARD_CASE_0);
-                        entries.add(SLUTModItems.SiWangZhiWu);
+                        entries.add(SLUTModItems.SIWANGZHIWU);
+                        entries.add(SLUTModItems.JINGSHUILIUYONG);
                     }).build());
 
 }
