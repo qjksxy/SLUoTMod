@@ -1,6 +1,12 @@
 {
   "block.slut_mod.block_card_case_0": "普通牌盒",
+  "death.attack.effect_siwang": "你死，或者我亡",
+  "death.attack.humo": "蝶引来生",
+  "death.attack.jingshui": "静水",
+  "effect.slut_mod.effect_siwang": "纳努克的瞥视",
   "item.slut_mod.item_citrine": "黄水晶",
+  "item.slut_mod.item_humozhizhang": "护摩之杖",
+  "item.slut_mod.item_jingshuiliuyong": "静水流涌之辉",
   "item.slut_mod.item_siwangzhiwu": "死亡之舞",
   "item.slut_mod.item_slut": "双辽理工大学徽章",
   "item.slut_mod.item_zom_1": "僵尸系列卡牌1",

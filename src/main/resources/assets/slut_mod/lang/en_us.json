@@ -12,5 +12,11 @@
   "item.slut_mod.item_zom_7": "zombie card 7",
   "item.slut_mod.item_zom_8": "zombie card 8",
   "item.slut_mod.item_zom_9": "zombie card 9",
-  "item.slut_mod.item_siwangzhiwu": "siwang zhiwu"
+  "item.slut_mod.item_siwangzhiwu": "siwang zhiwu",
+  "item.slut_mod.item_jingshuiliuyong": "Splendor of Tranquil",
+  "effect.slut_mod.effect_siwang": "DEATH",
+  "death.attack.effect_siwang": "killed by yourself",
+  "death.attack.humo": "killed by humo",
+  "death.attack.jingshui": "killed by jingshui",
+  "item.slut_mod.item_humozhizhang": "humozhizhang"
 }

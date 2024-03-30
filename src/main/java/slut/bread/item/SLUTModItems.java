@@ -8,6 +8,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import slut.bread.SLUTMod;
+import slut.bread.item.toolitem.HuMoZhiZhang;
 
 
 /**
@@ -27,8 +28,14 @@ public class SLUTModItems {
     public static final Item SLUT = registerItem("item_slut",
             new Item(new FabricItemSettings()));
 
-    public static final Item SiWangZhiWu = registerItem("item_siwangzhiwu",
+    public static final Item SIWANGZHIWU = registerItem("item_siwangzhiwu",
             new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings()));
+
+    public static final Item JINGSHUILIUYONG = registerItem("item_jingshuiliuyong",
+            new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings()));
+
+    public static final Item HUMOZHIZHANG = registerItem("item_humozhizhang",
+            new HuMoZhiZhang(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings()));
 
     // 僵尸系列卡牌
     public static final Item ZOM_1 = registerItem("item_zom_1",
