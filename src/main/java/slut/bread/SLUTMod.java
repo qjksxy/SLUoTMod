@@ -38,10 +38,10 @@ public class SLUTMod implements ModInitializer {
 		SLUTModStatusEffects.registerClass();
 		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
 			// 手动的旁观者检查是必要的，因为 AttackEntityCallback 会在旁观者检查之前应用
-			if (!player.isSpectator() && player.getMainHandStack().getItem() == SLUTModItems.SIWANGZHIWU) {
+			if (!player.isSpectator() && player.getMainHandStack().getItem() == SLUTModItems.JINGSHUILIUYONG) {
 				// 当玩家生命值大于 10 时，玩家攻击后会损失一点生命值，使伤害 + 2
 				// 当玩家生命值不大于 10 时，玩家攻击后会回复两点生命值
-				DamageSource damageSource = new DamageSource(RegistryEntry.of(new DamageType("迷思", 1.0f)));
+				DamageSource damageSource = new DamageSource(RegistryEntry.of(new DamageType("jingshui", 1.0f)));
 				if (player.getHealth() > 10f) {
 					player.damage(damageSource, 1.0F);
 					entity.damage(damageSource, 2.0f);

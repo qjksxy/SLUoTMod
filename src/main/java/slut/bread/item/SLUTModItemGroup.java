@@ -40,6 +40,7 @@ public class SLUTModItemGroup {
                         entries.add(SLUTModBlocks.CARD_CASE_0);
                         entries.add(SLUTModItems.SIWANGZHIWU);
                         entries.add(SLUTModItems.JINGSHUILIUYONG);
+                        entries.add(SLUTModItems.HUMOZHIZHANG);
                     }).build());
 
 }
