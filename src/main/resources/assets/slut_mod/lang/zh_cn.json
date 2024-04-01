@@ -1,5 +1,6 @@
 {
   "block.slut_mod.block_card_case_0": "普通牌盒",
+  "block.slut_mod.block_card_case_1": "精致牌盒",
   "death.attack.effect_siwang": "你死，或者我亡",
   "death.attack.humo": "蝶引来生",
   "death.attack.jingshui": "静水",
@@ -18,5 +19,7 @@
   "item.slut_mod.item_zom_7": "僵尸系列卡牌7",
   "item.slut_mod.item_zom_8": "僵尸系列卡牌8",
   "item.slut_mod.item_zom_9": "僵尸系列卡牌9",
-  "itemGroup.slut_mod.slut_group": "SLUTMod 物品组"
+  "itemGroup.slut_mod.slut_group": "SLUTMod 物品组",
+  "sounds.slut_mod.aomo": "喧繁之港",
+  "sounds.slut_mod.test": "测试音效"
 }
