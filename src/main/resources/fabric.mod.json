@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "slutmod",
+	"id": "slut_mod",
 	"version": "${version}",
 	"name": "SLUTMod",
 	"description": "This is an example description! Tell everyone what your mod is about!",

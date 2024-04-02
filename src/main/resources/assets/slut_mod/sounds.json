@@ -6,9 +6,19 @@
     ]
   },
   "sound_aomo": {
-    "subtitle": "sounds.slut_mod.aomo",
     "sounds": [
-      "slut_mod:aomo"
+      {
+        "name": "slut_mod:aomo",
+        "stream": true
+      }
+    ]
+  },
+  "sound_white_night": {
+    "sounds": [
+      {
+        "name": "slut_mod:white_night",
+        "stream": true
+      }
     ]
   }
 }

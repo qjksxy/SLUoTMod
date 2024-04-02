@@ -21,5 +21,11 @@
   "death.attack.jingshui": "killed by jingshui",
   "item.slut_mod.item_humozhizhang": "humozhizhang",
   "sounds.slut_mod.test": "test music",
-  "sounds.slut_mod.aomo": "aomo music"
+  "sounds.slut_mod.aomo": "aomo music",
+  "sounds.slut_mod.white_night": "white night",
+
+  "item.slut_mod.item_aomo_music_disc": "music disc - 1",
+  "item.slut_mod.item_aomo_music_disc.desc": "item_aomo_music_disc.desc",
+  "item.slut_mod.item_white_night_music_disc": "music disc - 2",
+  "item.slut_mod.item_white_night_music_disc.desc": "item_white_night_music_disc.desc"
 }

@@ -3,7 +3,6 @@ package slut.bread.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.MilkBucketItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -42,7 +41,8 @@ public class SLUTModItemGroup {
                         entries.add(SLUTModItems.SIWANGZHIWU);
                         entries.add(SLUTModItems.JINGSHUILIUYONG);
                         entries.add(SLUTModItems.HUMOZHIZHANG);
-                        entries.add(SLUTModItems.AOMO_MUSIC_DISK);
+                        entries.add(SLUTModItems.AOMO_MUSIC_DISC);
+                        entries.add(SLUTModItems.WHITE_NIGHT_MUSIC_DISC);
                     }).build());
 
 }

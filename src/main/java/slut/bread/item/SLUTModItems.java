@@ -1,13 +1,11 @@
 package slut.bread.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.Item;
-import net.minecraft.item.MusicDiscItem;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterials;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import slut.bread.SLUTMod;
 import slut.bread.item.toolitem.HuMoZhiZhang;
 import slut.bread.sounds.SLUTModSounds;
@@ -39,8 +37,11 @@ public class SLUTModItems {
     public static final Item HUMOZHIZHANG = registerItem("item_humozhizhang",
             new HuMoZhiZhang(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings()));
 
-    public static final Item AOMO_MUSIC_DISK = registerItem("item_aomo_music_disk",
-            new MusicDiscItem(4, SLUTModSounds.AOMO, new FabricItemSettings().maxCount(1), 101));
+    public static final Item AOMO_MUSIC_DISC = registerItem("item_aomo_music_disc",
+            new MusicDiscItem(7, SLUTModSounds.AOMO, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 161));
+
+    public static final Item WHITE_NIGHT_MUSIC_DISC = registerItem("item_white_night_music_disc",
+            new MusicDiscItem(7, SLUTModSounds.WHITE_NIGHT, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 138));
 
     // 僵尸系列卡牌
     public static final Item ZOM_1 = registerItem("item_zom_1",

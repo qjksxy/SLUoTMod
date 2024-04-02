@@ -36,5 +36,7 @@ public class SLUTModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(SLUTModItems.JINGSHUILIUYONG, Models.HANDHELD);
         itemModelGenerator.register(SLUTModItems.HUMOZHIZHANG, Models.HANDHELD);
         itemModelGenerator.register(SLUTModItems.SIWANGZHIWU, Models.HANDHELD);
+        itemModelGenerator.register(SLUTModItems.AOMO_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(SLUTModItems.WHITE_NIGHT_MUSIC_DISC, Models.GENERATED);
     }
 }

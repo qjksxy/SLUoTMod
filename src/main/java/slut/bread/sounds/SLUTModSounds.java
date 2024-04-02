@@ -11,7 +11,7 @@ public class SLUTModSounds {
 
     public static final SoundEvent TEST = registerSoundEvents("sound_test");
     public static final SoundEvent AOMO = registerSoundEvents("sound_aomo");
-
+    public static final SoundEvent WHITE_NIGHT = registerSoundEvents("sound_white_night");
 
     public static SoundEvent registerSoundEvents(String name) {
         Identifier identifier = new Identifier(SLUTMod.MOD_ID, name);
