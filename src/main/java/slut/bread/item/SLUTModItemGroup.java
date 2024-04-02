@@ -38,9 +38,11 @@ public class SLUTModItemGroup {
                         entries.add(SLUTModItems.CITRINE);
                         entries.add(SLUTModItems.SLUT);
                         entries.add(SLUTModBlocks.CARD_CASE_0);
+                        entries.add(SLUTModBlocks.CARD_CASE_1);
                         entries.add(SLUTModItems.SIWANGZHIWU);
                         entries.add(SLUTModItems.JINGSHUILIUYONG);
                         entries.add(SLUTModItems.HUMOZHIZHANG);
+                        entries.add(SLUTModItems.AOMO_MUSIC_DISK);
                     }).build());
 
 }

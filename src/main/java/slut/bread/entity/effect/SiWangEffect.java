@@ -9,7 +9,10 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.MilkBucketItem;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.world.World;
+import slut.bread.entity.damage.SLUTModDamages;
 
 /**
  * 死亡之舞武器的技能效果
@@ -32,7 +35,8 @@ public class SiWangEffect extends StatusEffect{
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         if (entity instanceof PlayerEntity playerEntity) {
-            DamageSource damageSource = new DamageSource(RegistryEntry.of(new DamageType("effect_siwang", 1.0f)));
+            World world = entity.getWorld();
+            DamageSource damageSource = SLUTModDamages.getDamageSource(world, SLUTModDamages.SIWANG);
             playerEntity.damage(damageSource, 1.0f);
         }
     }

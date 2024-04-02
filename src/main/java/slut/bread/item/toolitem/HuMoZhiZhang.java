@@ -1,5 +1,6 @@
 package slut.bread.item.toolitem;
 
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.damage.DamageType;
@@ -9,10 +10,20 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableTextContent;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+import slut.bread.entity.damage.SLUTModDamages;
+import slut.bread.sounds.SLUTModSounds;
+
+import java.util.List;
 
 public class HuMoZhiZhang extends SwordItem {
     public HuMoZhiZhang(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
@@ -23,7 +34,10 @@ public class HuMoZhiZhang extends SwordItem {
     // 同时获得持续400游戏刻（20s），1级力量状态效果（近战伤害+3）
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        DamageSource damageSource = new DamageSource(RegistryEntry.of(new DamageType("humo", 1.0f)));
+        Vec3d userPos = user.getPos();
+        world.playSound(null, userPos.x, userPos.y, userPos.z, SLUTModSounds.TEST, SoundCategory.VOICE, 1f, 1f);
+//        DamageSource damageSource = new DamageSource(RegistryEntry.of(new DamageType("humo", 1.0f)));
+        DamageSource damageSource = SLUTModDamages.getDamageSource(world, SLUTModDamages.HUMO);
         user.damage(damageSource, 6.0f);
         user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 400, 0));
         return TypedActionResult.success(user.getStackInHand(hand));

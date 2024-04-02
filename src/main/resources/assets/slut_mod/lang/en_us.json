@@ -3,6 +3,7 @@
   "item.slut_mod.item_citrine": "Citrine",
   "item.slut_mod.item_slut": "SLUT",
   "block.slut_mod.block_card_case_0": "Common card box",
+  "block.slut_mod.block_card_case_1": "Card box Pro",
   "item.slut_mod.item_zom_1": "zombie card 1",
   "item.slut_mod.item_zom_2": "zombie card 2",
   "item.slut_mod.item_zom_3": "zombie card 3",
@@ -15,8 +16,10 @@
   "item.slut_mod.item_siwangzhiwu": "siwang zhiwu",
   "item.slut_mod.item_jingshuiliuyong": "Splendor of Tranquil",
   "effect.slut_mod.effect_siwang": "DEATH",
-  "death.attack.effect_siwang": "killed by yourself",
+  "death.attack.siwang": "killed by yourself",
   "death.attack.humo": "killed by humo",
   "death.attack.jingshui": "killed by jingshui",
-  "item.slut_mod.item_humozhizhang": "humozhizhang"
+  "item.slut_mod.item_humozhizhang": "humozhizhang",
+  "sounds.slut_mod.test": "test music",
+  "sounds.slut_mod.aomo": "aomo music"
 }

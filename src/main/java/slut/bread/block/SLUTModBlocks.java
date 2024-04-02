@@ -17,7 +17,7 @@ import slut.bread.SLUTMod;
  * 1. 在本类中创建物品对应的 public static final Block 对象<br>
  * 2. 在类 SLUTModItemGroup 中，将方块添加到合适的物品组<br>
  * 3. 在 resources/.../lang/ 下的 json 文件中，添加方块的游戏内名称<br>
- * 4. 在 resources/.../models/block/ 中，创建说明文件<br>
+ * 4. 在 resources/.../models/ 下的 block/ 和 item/ 中，创建说明文件<br>
  * 5. 在 resources/.../textures/block/ 中，创建材质图片<br>
  * 6. 在 resources/.../blockstates/ 中，创建方块状态说明文件<br>
  * 7. 在 resources/.../data/slut_mod/loot_tables/blocks/ 中，创建战利品表
@@ -38,6 +38,8 @@ public class SLUTModBlocks {
      * 方块设置为使用特殊工具才能挖掘时，需要编辑 resources/.../data/minecraft/ 和 -/mineable/ 下的 json 文件
      */
     public static final Block CARD_CASE_0 = registerBlock("block_card_case_0",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block CARD_CASE_1 = registerBlock("block_card_case_1",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
 
     /*
