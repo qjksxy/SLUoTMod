@@ -10,6 +10,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
@@ -19,6 +20,7 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import slut.bread.entity.damage.SLUTModDamages;
 import slut.bread.sounds.SLUTModSounds;
 
 import java.util.List;
@@ -34,7 +36,8 @@ public class HuMoZhiZhang extends SwordItem {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         Vec3d userPos = user.getPos();
         world.playSound(null, userPos.x, userPos.y, userPos.z, SLUTModSounds.TEST, SoundCategory.VOICE, 1f, 1f);
-        DamageSource damageSource = new DamageSource(RegistryEntry.of(new DamageType("humo", 1.0f)));
+//        DamageSource damageSource = new DamageSource(RegistryEntry.of(new DamageType("humo", 1.0f)));
+        DamageSource damageSource = SLUTModDamages.getDamageSource(world, SLUTModDamages.HUMO);
         user.damage(damageSource, 6.0f);
         user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 400, 0));
         return TypedActionResult.success(user.getStackInHand(hand));

@@ -16,7 +16,7 @@
   "item.slut_mod.item_siwangzhiwu": "siwang zhiwu",
   "item.slut_mod.item_jingshuiliuyong": "Splendor of Tranquil",
   "effect.slut_mod.effect_siwang": "DEATH",
-  "death.attack.effect_siwang": "killed by yourself",
+  "death.attack.siwang": "killed by yourself",
   "death.attack.humo": "killed by humo",
   "death.attack.jingshui": "killed by jingshui",
   "item.slut_mod.item_humozhizhang": "humozhizhang",
