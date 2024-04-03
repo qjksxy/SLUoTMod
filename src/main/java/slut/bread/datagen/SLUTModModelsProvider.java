@@ -18,6 +18,7 @@ public class SLUTModModelsProvider extends FabricModelProvider {
         // FIXME 没有生成对应的 models/item 文件，目前需要手动添加
         blockStateModelGenerator.registerSimpleCubeAll(SLUTModBlocks.CARD_CASE_0);
         blockStateModelGenerator.registerSimpleCubeAll(SLUTModBlocks.CARD_CASE_1);
+        blockStateModelGenerator.registerSimpleCubeAll(SLUTModBlocks.CARD_CASE_2);
     }
 
     @Override
@@ -36,5 +37,10 @@ public class SLUTModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(SLUTModItems.JINGSHUILIUYONG, Models.HANDHELD);
         itemModelGenerator.register(SLUTModItems.HUMOZHIZHANG, Models.HANDHELD);
         itemModelGenerator.register(SLUTModItems.SIWANGZHIWU, Models.HANDHELD);
+        itemModelGenerator.register(SLUTModItems.AOMO_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(SLUTModItems.WHITE_NIGHT_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(SLUTModItems.LAMENTATION_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(SLUTModItems.NEVER_ENDING_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(SLUTModItems.RONDEAU_DES_MUSIC_DISC, Models.GENERATED);
     }
 }

@@ -3,7 +3,6 @@ package slut.bread.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.MilkBucketItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -35,14 +34,18 @@ public class SLUTModItemGroup {
                         entries.add(SLUTModItems.ZOM_7);
                         entries.add(SLUTModItems.ZOM_8);
                         entries.add(SLUTModItems.ZOM_9);
-                        entries.add(SLUTModItems.CITRINE);
                         entries.add(SLUTModItems.SLUT);
                         entries.add(SLUTModBlocks.CARD_CASE_0);
                         entries.add(SLUTModBlocks.CARD_CASE_1);
+                        entries.add(SLUTModBlocks.CARD_CASE_2);
                         entries.add(SLUTModItems.SIWANGZHIWU);
                         entries.add(SLUTModItems.JINGSHUILIUYONG);
                         entries.add(SLUTModItems.HUMOZHIZHANG);
-                        entries.add(SLUTModItems.AOMO_MUSIC_DISK);
+                        entries.add(SLUTModItems.AOMO_MUSIC_DISC);
+                        entries.add(SLUTModItems.WHITE_NIGHT_MUSIC_DISC);
+                        entries.add(SLUTModItems.LAMENTATION_MUSIC_DISC);
+                        entries.add(SLUTModItems.NEVER_ENDING_MUSIC_DISC);
+                        entries.add(SLUTModItems.RONDEAU_DES_MUSIC_DISC);
                     }).build());
 
 }

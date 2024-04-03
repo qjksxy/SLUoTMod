@@ -3,7 +3,9 @@ package slut.bread.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 import org.jetbrains.annotations.Nullable;
+import slut.bread.SLUTMod;
 import slut.bread.item.SLUTModItems;
 import slut.bread.util.SLUTModTags;
 
@@ -30,6 +32,11 @@ public class SLUTModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(SLUTModItems.ZOM_7)
                 .add(SLUTModItems.ZOM_8)
                 .add(SLUTModItems.ZOM_9);
-
+        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
+                .add(SLUTModItems.AOMO_MUSIC_DISC)
+                .add(SLUTModItems.WHITE_NIGHT_MUSIC_DISC)
+                .add(SLUTModItems.LAMENTATION_MUSIC_DISC)
+                .add(SLUTModItems.NEVER_ENDING_MUSIC_DISC)
+                .add(SLUTModItems.RONDEAU_DES_MUSIC_DISC);
     }
 }

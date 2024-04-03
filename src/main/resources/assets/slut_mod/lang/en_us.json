@@ -2,8 +2,9 @@
   "itemGroup.slut_mod.slut_group": "SLUTMod groups",
   "item.slut_mod.item_citrine": "Citrine",
   "item.slut_mod.item_slut": "SLUT",
-  "block.slut_mod.block_card_case_0": "Common card box",
+  "block.slut_mod.block_card_case_0": "Card box",
   "block.slut_mod.block_card_case_1": "Card box Pro",
+  "block.slut_mod.block_card_case_2": "Card box Max",
   "item.slut_mod.item_zom_1": "zombie card 1",
   "item.slut_mod.item_zom_2": "zombie card 2",
   "item.slut_mod.item_zom_3": "zombie card 3",
@@ -21,5 +22,15 @@
   "death.attack.jingshui": "killed by jingshui",
   "item.slut_mod.item_humozhizhang": "humozhizhang",
   "sounds.slut_mod.test": "test music",
-  "sounds.slut_mod.aomo": "aomo music"
+
+  "item.slut_mod.item_aomo_music_disc": "music disc - 1",
+  "item.slut_mod.item_aomo_music_disc.desc": "item_aomo_music_disc.desc",
+  "item.slut_mod.item_white_night_music_disc": "music disc - 2",
+  "item.slut_mod.item_white_night_music_disc.desc": "item_white_night_music_disc.desc",
+  "item.slut_mod.item_lamentation_music_disc": "Lamentation et triomphe",
+  "item.slut_mod.item_lamentation_music_disc.desc": "Lamentation et triomphe",
+  "item.slut_mod.item_never_ending_music_disc": "Never-Ending Performance",
+  "item.slut_mod.item_never_ending_music_disc.desc": "Never-Ending Performance",
+  "item.slut_mod.item_rondeau_des_music_disc": "Rondeau des fleurs et des rapieres",
+  "item.slut_mod.item_rondeau_des_music_disc.desc": "Rondeau des fleurs et des rapieres"
 }

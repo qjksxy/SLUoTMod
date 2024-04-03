@@ -41,13 +41,15 @@ public class SLUTModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
     public static final Block CARD_CASE_1 = registerBlock("block_card_case_1",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block CARD_CASE_2 = registerBlock("block_card_case_2",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
 
     /*
      ***** 下列方法的用途和实现无需关心 *****
      */
 
-    private static void registerBlockItem(String name, Block block) {
-        Registry.register(Registries.ITEM, new Identifier(SLUTMod.MOD_ID, name),
+    private static BlockItem registerBlockItem(String name, Block block) {
+        return Registry.register(Registries.ITEM, new Identifier(SLUTMod.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
     }
 
