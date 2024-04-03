@@ -20,5 +20,29 @@
         "stream": true
       }
     ]
+  },
+  "sound_lamentation": {
+    "sounds": [
+      {
+        "name": "slut_mod:lamentation",
+        "stream": true
+      }
+    ]
+  },
+  "sound_never_ending": {
+    "sounds": [
+      {
+        "name": "slut_mod:never_ending",
+        "stream": true
+      }
+    ]
+  },
+  "sound_rondeau_des": {
+    "sounds": [
+      {
+        "name": "slut_mod:rondeau_des",
+        "stream": true
+      }
+    ]
   }
 }
