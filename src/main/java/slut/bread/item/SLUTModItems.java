@@ -42,6 +42,12 @@ public class SLUTModItems {
 
     public static final Item WHITE_NIGHT_MUSIC_DISC = registerItem("item_white_night_music_disc",
             new MusicDiscItem(7, SLUTModSounds.WHITE_NIGHT, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 138));
+    public static final Item LAMENTATION_MUSIC_DISC = registerItem("item_lamentation_music_disc",
+            new MusicDiscItem(7, SLUTModSounds.LAMENTATION, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 229));
+    public static final Item NEVER_ENDING_MUSIC_DISC = registerItem("item_never_ending_music_disc",
+            new MusicDiscItem(7, SLUTModSounds.NEVER_ENDING, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 171));
+    public static final Item RONDEAU_DES_MUSIC_DISC = registerItem("item_rondeau_des_music_disc",
+            new MusicDiscItem(7, SLUTModSounds.RONDEAU_DES, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 233));
 
     // 僵尸系列卡牌
     public static final Item ZOM_1 = registerItem("item_zom_1",

@@ -19,10 +19,12 @@ public class SLUTModBlockTagProvider extends FabricTagProvider.BlockTagProvider 
         // 在标签中添加原版物品：.forceAddTag()
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(SLUTModBlocks.CARD_CASE_0)
-                .add(SLUTModBlocks.CARD_CASE_1);
+                .add(SLUTModBlocks.CARD_CASE_1)
+                .add(SLUTModBlocks.CARD_CASE_2);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(SLUTModBlocks.CARD_CASE_0)
-                .add(SLUTModBlocks.CARD_CASE_1);
+                .add(SLUTModBlocks.CARD_CASE_1)
+                .add(SLUTModBlocks.CARD_CASE_2);
     }
 }
