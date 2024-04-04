@@ -1,0 +1,48 @@
+{
+  "sound_test": {
+    "subtitle": "sounds.sluot_mod.test",
+    "sounds": [
+      "sluot_mod:test"
+    ]
+  },
+  "sound_aomo": {
+    "sounds": [
+      {
+        "name": "sluot_mod:aomo",
+        "stream": true
+      }
+    ]
+  },
+  "sound_white_night": {
+    "sounds": [
+      {
+        "name": "sluot_mod:white_night",
+        "stream": true
+      }
+    ]
+  },
+  "sound_lamentation": {
+    "sounds": [
+      {
+        "name": "sluot_mod:lamentation",
+        "stream": true
+      }
+    ]
+  },
+  "sound_never_ending": {
+    "sounds": [
+      {
+        "name": "sluot_mod:never_ending",
+        "stream": true
+      }
+    ]
+  },
+  "sound_rondeau_des": {
+    "sounds": [
+      {
+        "name": "sluot_mod:rondeau_des",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -12,17 +12,17 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/slut_mod/icon.png",
+	"icon": "assets/sluot_mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"slut.bread.SLUTMod"
+			"sluot.bread.SLUoTMod"
 		],
 		"client": [
-			"slut.bread.SLUTModClient"
+			"sluot.bread.SLUoTModClient"
 		],
 		"fabric-datagen": [
-			"slut.bread.SLUTModDataGenerator"
+			"sluot.bread.SLUoTModDataGenerator"
 		]
 	},
 	"mixins": [
