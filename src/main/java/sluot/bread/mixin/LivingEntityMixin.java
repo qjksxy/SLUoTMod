@@ -28,7 +28,7 @@ public class LivingEntityMixin {
                 if (!playerEntity.hasStatusEffect(ModStatusEffects.SIWANG)) {
                     return;
                 }
-                int duration = 0;
+                int duration;
                 StatusEffectInstance statusEffect = playerEntity.getStatusEffect(ModStatusEffects.SIWANG);
                 assert statusEffect != null;
                 duration = statusEffect.getDuration();

@@ -47,8 +47,8 @@ public class ModBlocks {
      ***** 下列方法的用途和实现无需关心 *****
      */
 
-    private static BlockItem registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, new Identifier(SLUoTMod.MOD_ID, name),
+    private static void registerBlockItem(String name, Block block) {
+        Registry.register(Registries.ITEM, new Identifier(SLUoTMod.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
     }
 
