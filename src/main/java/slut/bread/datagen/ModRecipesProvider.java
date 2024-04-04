@@ -6,8 +6,8 @@ import net.minecraft.data.server.recipe.RecipeJsonProvider;
 
 import java.util.function.Consumer;
 
-public class SLUTModRecipesProvider extends FabricRecipeProvider {
-    public SLUTModRecipesProvider(FabricDataOutput output) {
+public class ModRecipesProvider extends FabricRecipeProvider {
+    public ModRecipesProvider(FabricDataOutput output) {
         super(output);
     }
 

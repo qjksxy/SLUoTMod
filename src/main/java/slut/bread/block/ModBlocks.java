@@ -7,7 +7,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.server.command.EffectCommand;
 import net.minecraft.util.Identifier;
 import slut.bread.SLUTMod;
 
@@ -22,7 +21,7 @@ import slut.bread.SLUTMod;
  * 6. 在 resources/.../blockstates/ 中，创建方块状态说明文件<br>
  * 7. 在 resources/.../data/slut_mod/loot_tables/blocks/ 中，创建战利品表
  */
-public class SLUTModBlocks {
+public class ModBlocks {
     /* 在下方添加 Block 对象
      * 以方块 CARD_CASE_0 为例：
      * registerBlock 方法的参数 name 为方块 ID。如无特殊说明，所有与方块相关的文件名均与 ID 相同。
@@ -58,7 +57,7 @@ public class SLUTModBlocks {
         return Registry.register(Registries.BLOCK, new Identifier(SLUTMod.MOD_ID, name), block);
     }
     public static void registerClass() {
-        SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + SLUTModBlocks.class.getName());
+        SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + ModBlocks.class.getName());
     }
 
 

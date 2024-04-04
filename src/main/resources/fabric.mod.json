@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "slut_mod",
+	"id": "sluot_mod",
 	"version": "${version}",
-	"name": "SLUTMod",
+	"name": "SLUoTMod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -26,7 +26,7 @@
 		]
 	},
 	"mixins": [
-		"slutmod.mixins.json"
+		"sluotmod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.7",

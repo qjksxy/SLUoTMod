@@ -5,9 +5,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import slut.bread.SLUTMod;
-import slut.bread.block.SLUTModBlocks;
 
-public class SLUTModStatusEffects {
+public class ModStatusEffects {
     public static StatusEffect SIWANG = registerStatusEffect("effect_siwang", new SiWangEffect());
 
 
@@ -17,7 +16,7 @@ public class SLUTModStatusEffects {
 
 
     public static void registerClass() {
-        SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + SLUTModStatusEffects.class.getName());
+        SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + ModStatusEffects.class.getName());
     }
 
 }

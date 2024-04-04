@@ -3,10 +3,10 @@ package slut.bread.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 
-public class SLUTModLootTablesProvider extends FabricBlockLootTableProvider {
+public class ModLootTablesProvider extends FabricBlockLootTableProvider {
 
 
-    protected SLUTModLootTablesProvider(FabricDataOutput dataOutput) {
+    protected ModLootTablesProvider(FabricDataOutput dataOutput) {
         super(dataOutput);
     }
 

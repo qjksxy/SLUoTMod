@@ -5,9 +5,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import slut.bread.SLUTMod;
-import slut.bread.item.SLUTModItemGroup;
 
-public class SLUTModSounds {
+public class ModSounds {
 
     public static final SoundEvent TEST = registerSoundEvents("sound_test");
     public static final SoundEvent AOMO = registerSoundEvents("sound_aomo");
@@ -23,7 +22,7 @@ public class SLUTModSounds {
     }
 
     public static void registerClass() {
-        SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + SLUTModSounds.class.getName());
+        SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + ModSounds.class.getName());
     }
 
 

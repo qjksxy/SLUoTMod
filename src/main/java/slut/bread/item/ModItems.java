@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import slut.bread.SLUTMod;
 import slut.bread.item.toolitem.HuMoZhiZhang;
-import slut.bread.sounds.SLUTModSounds;
+import slut.bread.sounds.ModSounds;
 
 
 /**
@@ -20,7 +20,7 @@ import slut.bread.sounds.SLUTModSounds;
  * 4. 在 resources/.../models/item/ 中，创建说明文件<br>
  * 5. 在 resources/.../textures/item/ 中，创建材质图片
  */
-public class SLUTModItems {
+public class ModItems {
     // 黄水晶 测试用
     public static final Item CITRINE = registerItem("item_citrine",
             new Item(new FabricItemSettings()));
@@ -37,17 +37,17 @@ public class SLUTModItems {
     public static final Item HUMOZHIZHANG = registerItem("item_humozhizhang",
             new HuMoZhiZhang(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings()));
 
-    public static final Item AOMO_MUSIC_DISC = registerItem("item_aomo_music_disc",
-            new MusicDiscItem(7, SLUTModSounds.AOMO, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 161));
-
-    public static final Item WHITE_NIGHT_MUSIC_DISC = registerItem("item_white_night_music_disc",
-            new MusicDiscItem(7, SLUTModSounds.WHITE_NIGHT, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 138));
-    public static final Item LAMENTATION_MUSIC_DISC = registerItem("item_lamentation_music_disc",
-            new MusicDiscItem(7, SLUTModSounds.LAMENTATION, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 229));
-    public static final Item NEVER_ENDING_MUSIC_DISC = registerItem("item_never_ending_music_disc",
-            new MusicDiscItem(7, SLUTModSounds.NEVER_ENDING, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 171));
-    public static final Item RONDEAU_DES_MUSIC_DISC = registerItem("item_rondeau_des_music_disc",
-            new MusicDiscItem(7, SLUTModSounds.RONDEAU_DES, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 233));
+    // 唱片
+    public static final Item AOMO_MUSIC_DISC = registerItem("item_music_disc_aomo",
+            new MusicDiscItem(7, ModSounds.AOMO, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 161));
+    public static final Item WHITE_NIGHT_MUSIC_DISC = registerItem("item_music_disc_white_night",
+            new MusicDiscItem(7, ModSounds.WHITE_NIGHT, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 138));
+    public static final Item LAMENTATION_MUSIC_DISC = registerItem("item_music_disc_lamentation",
+            new MusicDiscItem(7, ModSounds.LAMENTATION, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 229));
+    public static final Item NEVER_ENDING_MUSIC_DISC = registerItem("item_music_disc_never_ending",
+            new MusicDiscItem(7, ModSounds.NEVER_ENDING, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 171));
+    public static final Item RONDEAU_DES_MUSIC_DISC = registerItem("item_music_disc_rondeau_des",
+            new MusicDiscItem(7, ModSounds.RONDEAU_DES, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 233));
 
     // 僵尸系列卡牌
     public static final Item ZOM_1 = registerItem("item_zom_1",
@@ -73,7 +73,7 @@ public class SLUTModItems {
      ***** 下列方法的用途和实现无需关心 *****
      */
     public static void registerClass() {
-        SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + SLUTModItems.class.getName());
+        SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + ModItems.class.getName());
     }
 
     private static Item registerItem(String name, Item item) {

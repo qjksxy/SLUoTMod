@@ -15,9 +15,9 @@ import slut.bread.SLUTMod;
  * 2. 在 resources/data/.../damage_type 中创建对应的 json 文件<br>
  * 3. 在需要 DamageSource 的地方调用 getDamageSource() 方法<br>
  */
-public class SLUTModDamages {
+public class ModDamages {
     public static void registerClass() {
-        SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + SLUTModDamages.class.getName());
+        SLUTMod.LOGGER.debug(SLUTMod.MOD_ID + "-Registering class: " + ModDamages.class.getName());
     }
 
     public static DamageSource getDamageSource(World world, RegistryKey<DamageType> damageTypeRegistryKey) {

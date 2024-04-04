@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import slut.bread.entity.effect.SLUTModStatusEffects;
+import slut.bread.entity.effect.ModStatusEffects;
 
 @Mixin(MilkBucketItem.class)
 public class MilkBucketItemMixin {
@@ -30,8 +30,8 @@ public class MilkBucketItemMixin {
             stack.decrement(1);
         }
         if (!world.isClient) {
-            if (user.hasStatusEffect(SLUTModStatusEffects.SIWANG)) {
-                StatusEffectInstance siwangEffect = user.getStatusEffect(SLUTModStatusEffects.SIWANG);
+            if (user.hasStatusEffect(ModStatusEffects.SIWANG)) {
+                StatusEffectInstance siwangEffect = user.getStatusEffect(ModStatusEffects.SIWANG);
                 user.clearStatusEffects();
                 user.addStatusEffect(siwangEffect);
             } else {

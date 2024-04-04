@@ -2,17 +2,11 @@ package slut.bread.entity.effect;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.damage.DamageType;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.MilkBucketItem;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.world.World;
-import slut.bread.entity.damage.SLUTModDamages;
+import slut.bread.entity.damage.ModDamages;
 
 /**
  * 死亡之舞武器的技能效果
@@ -36,7 +30,7 @@ public class SiWangEffect extends StatusEffect{
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         if (entity instanceof PlayerEntity playerEntity) {
             World world = entity.getWorld();
-            DamageSource damageSource = SLUTModDamages.getDamageSource(world, SLUTModDamages.SIWANG);
+            DamageSource damageSource = ModDamages.getDamageSource(world, ModDamages.SIWANG);
             playerEntity.damage(damageSource, 1.0f);
         }
     }
