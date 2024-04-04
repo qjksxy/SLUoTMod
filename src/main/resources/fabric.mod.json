@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "slut_mod",
+	"id": "sluot_mod",
 	"version": "${version}",
-	"name": "SLUTMod",
+	"name": "SLUoTMod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,21 +12,21 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/slut_mod/icon.png",
+	"icon": "assets/sluot_mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"slut.bread.SLUTMod"
+			"sluot.bread.SLUoTMod"
 		],
 		"client": [
-			"slut.bread.SLUTModClient"
+			"sluot.bread.SLUoTModClient"
 		],
 		"fabric-datagen": [
-			"slut.bread.SLUTModDataGenerator"
+			"sluot.bread.SLUoTModDataGenerator"
 		]
 	},
 	"mixins": [
-		"slutmod.mixins.json"
+		"sluotmod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.7",

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "WWW",
+    "WRW"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:copper_block"
+    },
+    "R": {
+      "item": "sluot_mod:item_sluot"
+    }
+  },
+  "result": {
+    "item": "sluot_mod:block_card_case_0",
+    "count": 1
+  }
+}
