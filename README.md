@@ -13,3 +13,4 @@ ShuangLiao University of Technology Mod
 1. 添加了更多的唱片；
 2. 添加了三种武器；
 3. 添加了若干卡牌。
+
