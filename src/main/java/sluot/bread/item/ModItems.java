@@ -29,10 +29,18 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     public static final Item SIWANGZHIWU = registerItem("item_siwangzhiwu",
-            new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings()));
+            new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
 
     public static final Item JINGSHUILIUYONG = registerItem("item_jingshuiliuyong",
-            new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings()));
+            new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+    public static final Item JINGSHUILIUYONG_2 = registerItem("item_jingshuiliuyong_2",
+            new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings().rarity(Rarity.RARE)));
+    public static final Item JINGSHUILIUYONG_3 = registerItem("item_jingshuiliuyong_3",
+            new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings().rarity(Rarity.RARE)));
+    public static final Item JINGSHUILIUYONG_4 = registerItem("item_jingshuiliuyong_4",
+            new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings().rarity(Rarity.RARE)));
+    public static final Item JINGSHUILIUYONG_5 = registerItem("item_jingshuiliuyong_5",
+            new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings().rarity(Rarity.EPIC)));
 
     public static final Item HUMOZHIZHANG = registerItem("item_humozhizhang",
             new HuMoZhiZhang(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings()));

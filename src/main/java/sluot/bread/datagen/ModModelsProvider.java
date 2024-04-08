@@ -53,6 +53,10 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FOCUS_8, Models.GENERATED);
         itemModelGenerator.register(ModItems.FOCUS_9, Models.GENERATED);
         itemModelGenerator.register(ModItems.JINGSHUILIUYONG, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.JINGSHUILIUYONG_2, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.JINGSHUILIUYONG_3, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.JINGSHUILIUYONG_4, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.JINGSHUILIUYONG_5, Models.HANDHELD);
         itemModelGenerator.register(ModItems.HUMOZHIZHANG, Models.HANDHELD);
         itemModelGenerator.register(ModItems.SIWANGZHIWU, Models.HANDHELD);
         itemModelGenerator.register(ModItems.AOMO_MUSIC_DISC, Models.GENERATED);

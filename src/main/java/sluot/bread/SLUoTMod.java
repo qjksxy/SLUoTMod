@@ -3,8 +3,14 @@ package sluot.bread;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
+import net.minecraft.util.hit.EntityHitResult;
+import net.minecraft.world.World;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sluot.bread.block.ModBlocks;
@@ -22,6 +28,37 @@ public class SLUoTMod implements ModInitializer {
     public static final String MOD_ID = "sluot_mod";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+	private void jingshui(PlayerEntity player, World world, Hand hand, Entity entity, EntityHitResult hitResult) {
+		if (player.isSpectator()) {
+			return;
+		}
+		Item item = player.getMainHandStack().getItem();
+		int rank = 0;
+		if (item == ModItems.JINGSHUILIUYONG) {
+			rank = 1;
+		} else if (item == ModItems.JINGSHUILIUYONG_2) {
+			rank = 2;
+		} else if (item == ModItems.JINGSHUILIUYONG_3) {
+			rank = 3;
+		} else if (item == ModItems.JINGSHUILIUYONG_4) {
+			rank = 4;
+		} else if (item == ModItems.JINGSHUILIUYONG_5) {
+			rank = 5;
+		}
+		// 手动的旁观者检查是必要的，因为 AttackEntityCallback 会在旁观者检查之前应用
+		if (rank != 0) {
+			// 当玩家生命值大于 12 时，玩家攻击后会损失 1 点生命值，使伤害 + 3
+			// 当玩家生命值不大于 12 时，玩家攻击后会回复 3 点生命值
+			DamageSource damageSource = ModDamages.getDamageSource(world, ModDamages.JINGSHUI);
+			if (player.getHealth() > 12f) {
+				player.damage(damageSource, 1.0F);
+				entity.damage(damageSource, 2.0f + rank);
+			} else {
+				player.heal(2.0f + rank);
+			}
+		}
+	}
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -36,18 +73,7 @@ public class SLUoTMod implements ModInitializer {
 		ModSounds.registerClass();
 		ModDamages.registerClass();
 		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
-			// 手动的旁观者检查是必要的，因为 AttackEntityCallback 会在旁观者检查之前应用
-			if (!player.isSpectator() && player.getMainHandStack().getItem() == ModItems.JINGSHUILIUYONG) {
-				// 当玩家生命值大于 12 时，玩家攻击后会损失 1 点生命值，使伤害 + 3
-				// 当玩家生命值不大于 12 时，玩家攻击后会回复 3 点生命值
-				DamageSource damageSource = ModDamages.getDamageSource(world, ModDamages.JINGSHUI);
-				if (player.getHealth() > 12f) {
-					player.damage(damageSource, 1.0F);
-					entity.damage(damageSource, 3.0f);
-				} else {
-					player.heal(3.0f);
-				}
-			}
+			jingshui(player, world, hand, entity, hitResult);
 			return ActionResult.PASS;
 		});
 	}
