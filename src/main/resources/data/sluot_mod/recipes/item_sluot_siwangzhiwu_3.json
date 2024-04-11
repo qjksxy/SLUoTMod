@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sluot_mod:item_siwangzhiwu_1"
+    },
+    {
+      "item": "sluot_mod:item_siwangzhiwu_2"
+    }
+  ],
+  "result": {
+    "item": "sluot_mod:item_siwangzhiwu_3",
+    "count": 1
+  }
+}

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.Item;
 import sluot.bread.block.ModBlocks;
 import sluot.bread.item.ModItems;
 
@@ -52,13 +53,15 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FOCUS_7, Models.GENERATED);
         itemModelGenerator.register(ModItems.FOCUS_8, Models.GENERATED);
         itemModelGenerator.register(ModItems.FOCUS_9, Models.GENERATED);
-        itemModelGenerator.register(ModItems.JINGSHUILIUYONG, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.JINGSHUILIUYONG_2, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.JINGSHUILIUYONG_3, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.JINGSHUILIUYONG_4, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.JINGSHUILIUYONG_5, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.HUMOZHIZHANG, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.SIWANGZHIWU, Models.HANDHELD);
+        for (Item item : ModItems.JINGSHUILIUYONG) {
+            itemModelGenerator.register(item, Models.HANDHELD);
+        }
+        for (Item item : ModItems.HUMOZHIZHANG) {
+            itemModelGenerator.register(item, Models.HANDHELD);
+        }
+        for (Item item : ModItems.SIWANGZHIWU) {
+            itemModelGenerator.register(item, Models.HANDHELD);
+        }
         itemModelGenerator.register(ModItems.AOMO_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.WHITE_NIGHT_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.LAMENTATION_MUSIC_DISC, Models.GENERATED);

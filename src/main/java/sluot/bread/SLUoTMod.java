@@ -34,15 +34,15 @@ public class SLUoTMod implements ModInitializer {
 		}
 		Item item = player.getMainHandStack().getItem();
 		int rank = 0;
-		if (item == ModItems.JINGSHUILIUYONG) {
+		if (item == ModItems.JINGSHUILIUYONG[0]) {
 			rank = 1;
-		} else if (item == ModItems.JINGSHUILIUYONG_2) {
+		} else if (item == ModItems.JINGSHUILIUYONG[1]) {
 			rank = 2;
-		} else if (item == ModItems.JINGSHUILIUYONG_3) {
+		} else if (item == ModItems.JINGSHUILIUYONG[2]) {
 			rank = 3;
-		} else if (item == ModItems.JINGSHUILIUYONG_4) {
+		} else if (item == ModItems.JINGSHUILIUYONG[3]) {
 			rank = 4;
-		} else if (item == ModItems.JINGSHUILIUYONG_5) {
+		} else if (item == ModItems.JINGSHUILIUYONG[4]) {
 			rank = 5;
 		}
 		// 手动的旁观者检查是必要的，因为 AttackEntityCallback 会在旁观者检查之前应用

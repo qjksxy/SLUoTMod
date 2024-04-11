@@ -56,9 +56,9 @@ public class ModItemGroup {
                         entries.add(ModBlocks.CARD_CASE_0);
                         entries.add(ModBlocks.CARD_CASE_1);
                         entries.add(ModBlocks.CARD_CASE_2);
-                        entries.add(ModItems.SIWANGZHIWU);
-                        entries.add(ModItems.JINGSHUILIUYONG);
-                        entries.add(ModItems.HUMOZHIZHANG);
+                        entries.add(ModItems.SIWANGZHIWU[0]);
+                        entries.add(ModItems.JINGSHUILIUYONG[0]);
+                        entries.add(ModItems.HUMOZHIZHANG[0]);
                         entries.add(ModItems.AOMO_MUSIC_DISC);
                         entries.add(ModItems.WHITE_NIGHT_MUSIC_DISC);
                         entries.add(ModItems.LAMENTATION_MUSIC_DISC);

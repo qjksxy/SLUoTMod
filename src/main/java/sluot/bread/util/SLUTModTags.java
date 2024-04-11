@@ -21,7 +21,7 @@ public class SLUTModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> CARD_LIST_ZOM = createTag("tag_card_list_zom");
+        public static final TagKey<Item> CARD_LIST = createTag("tag_card_list");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(SLUoTMod.MOD_ID, name));
