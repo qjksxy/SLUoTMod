@@ -24,7 +24,19 @@ public class LivingEntityMixin {
         // 检查是否为玩家击杀生物
         if (entity instanceof PlayerEntity playerEntity) {
             Item item = playerEntity.getEquippedStack(EquipmentSlot.MAINHAND).getItem();
-            if(item == ModItems.SIWANGZHIWU) {
+            int rank = 0;
+            if (item == ModItems.SIWANGZHIWU[0]) {
+                rank = 1;
+            } else if (item == ModItems.SIWANGZHIWU[1]) {
+                rank = 2;
+            } else if (item == ModItems.SIWANGZHIWU[2]) {
+                rank = 3;
+            } else if (item == ModItems.SIWANGZHIWU[3]) {
+                rank = 4;
+            } else if (item == ModItems.SIWANGZHIWU[4]) {
+                rank = 5;
+            }
+            if(rank > 0) {
                 if (!playerEntity.hasStatusEffect(ModStatusEffects.SIWANG)) {
                     return;
                 }
@@ -32,11 +44,12 @@ public class LivingEntityMixin {
                 StatusEffectInstance statusEffect = playerEntity.getStatusEffect(ModStatusEffects.SIWANG);
                 assert statusEffect != null;
                 duration = statusEffect.getDuration();
-                // 至多免除 30 秒的凋零伤害, 不会持续恢复生命
-                if(duration < 400) {
+                // 至多免除 rank * 8 秒的凋零伤害, 不会持续恢复生命
+                int r_time = rank * 8 * 20;
+                if(duration < r_time) {
                     playerEntity.removeStatusEffect(ModStatusEffects.SIWANG);
                 } else {
-                    playerEntity.addStatusEffect(new StatusEffectInstance(ModStatusEffects.SIWANG, (duration - 400), 1));
+                    playerEntity.addStatusEffect(new StatusEffectInstance(ModStatusEffects.SIWANG, (duration - r_time), 1));
                 }
             }
         }

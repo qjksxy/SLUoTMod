@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sluot_mod:item_zom_1"
+    },
+    {
+      "item": "sluot_mod:item_zom_2"
+    },
+    {
+      "item": "sluot_mod:item_zom_3"
+    },
+    {
+      "item": "sluot_mod:item_zom_4"
+    },
+    {
+      "item": "sluot_mod:item_zom_5"
+    },
+    {
+      "item": "sluot_mod:item_zom_6"
+    },
+    {
+      "item": "sluot_mod:item_zom_7"
+    },
+    {
+      "item": "sluot_mod:item_zom_8"
+    },
+    {
+      "item": "sluot_mod:item_zom_9"
+    }
+  ],
+  "result": {
+    "item": "sluot_mod:item_siwangzhiwu_1",
+    "count": 1
+  }
+}

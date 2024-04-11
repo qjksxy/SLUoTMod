@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sluot_mod:item_focus_1"
+    },
+    {
+      "item": "sluot_mod:item_focus_2"
+    },
+    {
+      "item": "sluot_mod:item_focus_3"
+    },
+    {
+      "item": "sluot_mod:item_focus_4"
+    },
+    {
+      "item": "sluot_mod:item_focus_5"
+    },
+    {
+      "item": "sluot_mod:item_focus_6"
+    },
+    {
+      "item": "sluot_mod:item_focus_7"
+    },
+    {
+      "item": "sluot_mod:item_focus_8"
+    },
+    {
+      "item": "sluot_mod:item_focus_9"
+    }
+  ],
+  "result": {
+    "item": "sluot_mod:item_humozhizhang_1",
+    "count": 1
+  }
+}

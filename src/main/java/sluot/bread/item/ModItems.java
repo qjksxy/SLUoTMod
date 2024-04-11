@@ -28,14 +28,43 @@ public class ModItems {
     public static final Item SLUT = registerItem("item_sluot",
             new Item(new FabricItemSettings()));
 
-    public static final Item SIWANGZHIWU = registerItem("item_siwangzhiwu",
-            new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings()));
+    //    public static final Item SIWANGZHIWU = registerItem("item_siwangzhiwu",
+//            new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+    public static final Item[] SIWANGZHIWU = {
+            registerItem("item_siwangzhiwu_1", new SwordItem(ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.UNCOMMON))),
+            registerItem("item_siwangzhiwu_2", new SwordItem(ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.RARE))),
+            registerItem("item_siwangzhiwu_3", new SwordItem(ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.RARE))),
+            registerItem("item_siwangzhiwu_4", new SwordItem(ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.RARE))),
+            registerItem("item_siwangzhiwu_5", new SwordItem(ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.EPIC)))};
+    public static final Item[] JINGSHUILIUYONG = {
+            registerItem("item_jingshuiliuyong_1", new SwordItem(ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.UNCOMMON))),
+            registerItem("item_jingshuiliuyong_2", new SwordItem(ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.RARE))),
+            registerItem("item_jingshuiliuyong_3", new SwordItem(ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.RARE))),
+            registerItem("item_jingshuiliuyong_4", new SwordItem(ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.RARE))),
+            registerItem("item_jingshuiliuyong_5", new SwordItem(ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.EPIC)))};
 
-    public static final Item JINGSHUILIUYONG = registerItem("item_jingshuiliuyong",
-            new SwordItem(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings()));
-
-    public static final Item HUMOZHIZHANG = registerItem("item_humozhizhang",
-            new HuMoZhiZhang(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings()));
+    public static final Item[] HUMOZHIZHANG = {
+            registerItem("item_humozhizhang_1", new HuMoZhiZhang(1, ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.UNCOMMON))),
+            registerItem("item_humozhizhang_2", new HuMoZhiZhang(2, ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.RARE))),
+            registerItem("item_humozhizhang_3", new HuMoZhiZhang(3, ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.RARE))),
+            registerItem("item_humozhizhang_4", new HuMoZhiZhang(4, ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.RARE))),
+            registerItem("item_humozhizhang_5", new HuMoZhiZhang(5, ToolMaterials.IRON, 3, -2.4f,
+                    new FabricItemSettings().rarity(Rarity.EPIC))),
+    };
 
     // 唱片
     public static final Item AOMO_MUSIC_DISC = registerItem("item_music_disc_aomo",
@@ -68,6 +97,43 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item ZOM_9 = registerItem("item_zom_9",
             new Item(new FabricItemSettings()));
+    public static final Item BOOK_1 = registerItem("item_book_1",
+            new Item(new FabricItemSettings()));
+    public static final Item BOOK_2 = registerItem("item_book_2",
+            new Item(new FabricItemSettings()));
+    public static final Item BOOK_3 = registerItem("item_book_3",
+            new Item(new FabricItemSettings()));
+    public static final Item BOOK_4 = registerItem("item_book_4",
+            new Item(new FabricItemSettings()));
+    public static final Item BOOK_5 = registerItem("item_book_5",
+            new Item(new FabricItemSettings()));
+    public static final Item BOOK_6 = registerItem("item_book_6",
+            new Item(new FabricItemSettings()));
+    public static final Item BOOK_7 = registerItem("item_book_7",
+            new Item(new FabricItemSettings()));
+    public static final Item BOOK_8 = registerItem("item_book_8",
+            new Item(new FabricItemSettings()));
+    public static final Item BOOK_9 = registerItem("item_book_9",
+            new Item(new FabricItemSettings()));
+    public static final Item FOCUS_1 = registerItem("item_focus_1",
+            new Item(new FabricItemSettings()));
+    public static final Item FOCUS_2 = registerItem("item_focus_2",
+            new Item(new FabricItemSettings()));
+    public static final Item FOCUS_3 = registerItem("item_focus_3",
+            new Item(new FabricItemSettings()));
+    public static final Item FOCUS_4 = registerItem("item_focus_4",
+            new Item(new FabricItemSettings()));
+    public static final Item FOCUS_5 = registerItem("item_focus_5",
+            new Item(new FabricItemSettings()));
+    public static final Item FOCUS_6 = registerItem("item_focus_6",
+            new Item(new FabricItemSettings()));
+    public static final Item FOCUS_7 = registerItem("item_focus_7",
+            new Item(new FabricItemSettings()));
+    public static final Item FOCUS_8 = registerItem("item_focus_8",
+            new Item(new FabricItemSettings()));
+    public static final Item FOCUS_9 = registerItem("item_focus_9",
+            new Item(new FabricItemSettings()));
+
 
     /*
      ***** 下列方法的用途和实现无需关心 *****
