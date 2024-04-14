@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import sluot.bread.entity.effect.ModStatusEffects;
 import sluot.bread.item.ModItems;
+import sluot.bread.util.WeaponItem;
 
 @Mixin(LivingEntity.class)
 public class LivingEntityMixin {
@@ -24,19 +25,8 @@ public class LivingEntityMixin {
         // 检查是否为玩家击杀生物
         if (entity instanceof PlayerEntity playerEntity) {
             Item item = playerEntity.getEquippedStack(EquipmentSlot.MAINHAND).getItem();
-            int rank = 0;
-            if (item == ModItems.SIWANGZHIWU[0]) {
-                rank = 1;
-            } else if (item == ModItems.SIWANGZHIWU[1]) {
-                rank = 2;
-            } else if (item == ModItems.SIWANGZHIWU[2]) {
-                rank = 3;
-            } else if (item == ModItems.SIWANGZHIWU[3]) {
-                rank = 4;
-            } else if (item == ModItems.SIWANGZHIWU[4]) {
-                rank = 5;
-            }
-            if(rank > 0) {
+            WeaponItem weapon = WeaponItem.getModWeapon(item);
+            if(weapon.weaponName.equals(WeaponItem.SIWANG)) {
                 if (!playerEntity.hasStatusEffect(ModStatusEffects.SIWANG)) {
                     return;
                 }
@@ -45,7 +35,7 @@ public class LivingEntityMixin {
                 assert statusEffect != null;
                 duration = statusEffect.getDuration();
                 // 至多免除 rank * 8 秒的凋零伤害, 不会持续恢复生命
-                int r_time = rank * 8 * 20;
+                int r_time = weapon.rank * 8 * 20;
                 if(duration < r_time) {
                     playerEntity.removeStatusEffect(ModStatusEffects.SIWANG);
                 } else {

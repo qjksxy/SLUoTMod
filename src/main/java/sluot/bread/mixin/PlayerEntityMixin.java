@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import sluot.bread.entity.effect.ModStatusEffects;
 import sluot.bread.item.ModItems;
+import sluot.bread.util.WeaponItem;
 
 @Mixin(PlayerEntity.class)
 public abstract class PlayerEntityMixin {
@@ -23,19 +24,8 @@ public abstract class PlayerEntityMixin {
         Item item = itemStack.getItem();
         // 只有其他生物造成的伤害才会触发，摔落伤害、岩浆伤害等不会触发
         boolean attackByLivingEntity = source.getAttacker() instanceof LivingEntity;
-        int rank = 0;
-        if (item == ModItems.SIWANGZHIWU[0]) {
-            rank = 1;
-        } else if (item == ModItems.SIWANGZHIWU[1]) {
-            rank = 2;
-        } else if (item == ModItems.SIWANGZHIWU[2]) {
-            rank = 3;
-        } else if (item == ModItems.SIWANGZHIWU[3]) {
-            rank = 4;
-        } else if (item == ModItems.SIWANGZHIWU[4]) {
-            rank = 5;
-        }
-        if (rank > 0 && attackByLivingEntity) {
+        WeaponItem weapon = WeaponItem.getModWeapon(item);
+        if (weapon.weaponName.equals(WeaponItem.SIWANG) && attackByLivingEntity) {
             playerEntity.damage(source, Math.min(amount, 1.0f));
             int duration = 5;
             if (playerEntity.hasStatusEffect(ModStatusEffects.SIWANG)) {
@@ -43,7 +33,7 @@ public abstract class PlayerEntityMixin {
                 assert statusEffect != null;
                 duration += statusEffect.getDuration();
             }
-            duration = (int) (duration + amount * 20 * (1.1 - rank * 0.1));
+            duration = (int) (duration + amount * 20 * (1.1 - weapon.rank * 0.1));
             playerEntity.addStatusEffect(new StatusEffectInstance(ModStatusEffects.SIWANG, duration, 1));
             ci.cancel();
         }
