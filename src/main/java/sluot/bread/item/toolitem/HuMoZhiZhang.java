@@ -30,7 +30,6 @@ public class HuMoZhiZhang extends SwordItem {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         Vec3d userPos = user.getPos();
         world.playSound(null, userPos.x, userPos.y, userPos.z, ModSounds.TEST, SoundCategory.VOICE, 1f, 1f);
-//        DamageSource damageSource = new DamageSource(RegistryEntry.of(new DamageType("humo", 1.0f)));
         DamageSource damageSource = ModDamages.getDamageSource(world, ModDamages.HUMO);
         user.damage(damageSource, 6.0f);
         user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 300 + 100 * rank, 0));

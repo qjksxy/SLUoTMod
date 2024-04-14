@@ -19,6 +19,7 @@ import sluot.bread.entity.effect.ModStatusEffects;
 import sluot.bread.item.ModItemGroup;
 import sluot.bread.item.ModItems;
 import sluot.bread.sounds.ModSounds;
+import sluot.bread.util.WeaponItem;
 
 public class SLUoTMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -33,28 +34,17 @@ public class SLUoTMod implements ModInitializer {
 			return;
 		}
 		Item item = player.getMainHandStack().getItem();
-		int rank = 0;
-		if (item == ModItems.JINGSHUILIUYONG[0]) {
-			rank = 1;
-		} else if (item == ModItems.JINGSHUILIUYONG[1]) {
-			rank = 2;
-		} else if (item == ModItems.JINGSHUILIUYONG[2]) {
-			rank = 3;
-		} else if (item == ModItems.JINGSHUILIUYONG[3]) {
-			rank = 4;
-		} else if (item == ModItems.JINGSHUILIUYONG[4]) {
-			rank = 5;
-		}
+		WeaponItem weapon = WeaponItem.getModWeapon(item);
 		// 手动的旁观者检查是必要的，因为 AttackEntityCallback 会在旁观者检查之前应用
-		if (rank != 0) {
+		if (weapon.weaponName.equals(WeaponItem.JINGSHUI)) {
 			// 当玩家生命值大于 12 时，玩家攻击后会损失 1 点生命值，使伤害 + 3
 			// 当玩家生命值不大于 12 时，玩家攻击后会回复 3 点生命值
 			DamageSource damageSource = ModDamages.getDamageSource(world, ModDamages.JINGSHUI);
 			if (player.getHealth() > 12f) {
 				player.damage(damageSource, 1.0F);
-				entity.damage(damageSource, 2.0f + rank);
+				entity.damage(damageSource, 2.0f + weapon.rank);
 			} else {
-				player.heal(2.0f + rank);
+				player.heal(2.0f + weapon.rank);
 			}
 		}
 	}

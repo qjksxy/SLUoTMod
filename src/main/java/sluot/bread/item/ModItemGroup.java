@@ -1,6 +1,7 @@
 package sluot.bread.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -25,45 +26,25 @@ public class ModItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.sluot_mod.sluot_group")).
                     icon(() -> new ItemStack(ModItems.SLUT)).entries((displayContext, entries) -> {
                         // 在此处将物品添加到物品组
-                        entries.add(ModItems.ZOM_1);
-                        entries.add(ModItems.ZOM_2);
-                        entries.add(ModItems.ZOM_3);
-                        entries.add(ModItems.ZOM_4);
-                        entries.add(ModItems.ZOM_5);
-                        entries.add(ModItems.ZOM_6);
-                        entries.add(ModItems.ZOM_7);
-                        entries.add(ModItems.ZOM_8);
-                        entries.add(ModItems.ZOM_9);
-                        entries.add(ModItems.BOOK_1);
-                        entries.add(ModItems.BOOK_2);
-                        entries.add(ModItems.BOOK_3);
-                        entries.add(ModItems.BOOK_4);
-                        entries.add(ModItems.BOOK_5);
-                        entries.add(ModItems.BOOK_6);
-                        entries.add(ModItems.BOOK_7);
-                        entries.add(ModItems.BOOK_8);
-                        entries.add(ModItems.BOOK_9);
-                        entries.add(ModItems.FOCUS_1);
-                        entries.add(ModItems.FOCUS_2);
-                        entries.add(ModItems.FOCUS_3);
-                        entries.add(ModItems.FOCUS_4);
-                        entries.add(ModItems.FOCUS_5);
-                        entries.add(ModItems.FOCUS_6);
-                        entries.add(ModItems.FOCUS_7);
-                        entries.add(ModItems.FOCUS_8);
-                        entries.add(ModItems.FOCUS_9);
                         entries.add(ModItems.SLUT);
                         entries.add(ModBlocks.CARD_CASE_0);
                         entries.add(ModBlocks.CARD_CASE_1);
                         entries.add(ModBlocks.CARD_CASE_2);
-                        entries.add(ModItems.SIWANGZHIWU[0]);
-                        entries.add(ModItems.JINGSHUILIUYONG[0]);
-                        entries.add(ModItems.HUMOZHIZHANG[0]);
-                        entries.add(ModItems.AOMO_MUSIC_DISC);
-                        entries.add(ModItems.WHITE_NIGHT_MUSIC_DISC);
-                        entries.add(ModItems.LAMENTATION_MUSIC_DISC);
-                        entries.add(ModItems.NEVER_ENDING_MUSIC_DISC);
-                        entries.add(ModItems.RONDEAU_DES_MUSIC_DISC);
+                        entries.add(ModItems.SIWANG_ITEMS.get(0));
+                        entries.add(ModItems.JINGSHUI_ITEMS.get(0));
+                        entries.add(ModItems.HUMO_ITEMS.get(0));
+                        for (Item item : ModItems.MUSIC_DISC_ITEMS) {
+                            entries.add(item);
+                        }
+                        for (Item item : ModItems.CARD_ITEMS_ZOM) {
+                            entries.add(item);
+                        }
+                        for (Item item : ModItems.CARD_ITEMS_BOOK) {
+                            entries.add(item);
+                        }
+                        for (Item item : ModItems.CARD_ITEMS_FOCUS) {
+                            entries.add(item);
+                        }
                     }).build());
 
 }

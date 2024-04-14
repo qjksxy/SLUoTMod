@@ -4,7 +4,7 @@
   "block.sluot_mod.block_card_case_2": "稀有牌盒",
   "death.attack.humo": "蝶引来生",
   "death.attack.jingshui": "静水",
-  "death.attack.siwang": "你死，或者我亡",
+  "death.attack.siwang.player": "你死，或者我亡",
   "effect.sluot_mod.effect_siwang": "纳努克的瞥视",
   "item.sluot_mod.item_book_1": "典籍系列卡牌1",
   "item.sluot_mod.item_book_2": "典籍系列卡牌2",
