@@ -34,8 +34,8 @@ public class LivingEntityMixin {
                 StatusEffectInstance statusEffect = playerEntity.getStatusEffect(ModStatusEffects.SIWANG);
                 assert statusEffect != null;
                 duration = statusEffect.getDuration();
-                // 至多免除 rank * 8 秒的凋零伤害, 不会持续恢复生命
-                int r_time = weapon.rank * 8 * 20;
+                // 至多免除 6 + rank * 2 秒的凋零伤害
+                int r_time = 120 + weapon.rank * 2 * 20;
                 if(duration < r_time) {
                     playerEntity.removeStatusEffect(ModStatusEffects.SIWANG);
                 } else {
