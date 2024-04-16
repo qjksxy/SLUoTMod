@@ -37,14 +37,14 @@ public class SLUoTMod implements ModInitializer {
 		WeaponItem weapon = WeaponItem.getModWeapon(item);
 		// 手动的旁观者检查是必要的，因为 AttackEntityCallback 会在旁观者检查之前应用
 		if (weapon.weaponName.equals(WeaponItem.JINGSHUI)) {
-			// 当玩家生命值大于 12 时，玩家攻击后会损失 1 点生命值，使伤害 + 3
-			// 当玩家生命值不大于 12 时，玩家攻击后会回复 3 点生命值
+			// 当玩家生命值大于 12 时，玩家攻击后会损失 1 点生命值，使伤害增加
+			// 当玩家生命值不大于 12 时，玩家攻击后会回复 4 点生命值
 			DamageSource damageSource = ModDamages.getDamageSource(world, ModDamages.JINGSHUI);
 			if (player.getHealth() > 12f) {
 				player.damage(damageSource, 1.0F);
-				entity.damage(damageSource, 2.0f + weapon.rank);
+				entity.damage(damageSource, 3.0f + weapon.rank);
 			} else {
-				player.heal(2.0f + weapon.rank);
+				player.heal(3.0f + weapon.rank);
 			}
 		}
 	}

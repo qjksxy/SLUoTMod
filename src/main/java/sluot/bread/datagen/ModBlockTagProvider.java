@@ -19,11 +19,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.CARD_CASE_0)
                 .add(ModBlocks.CARD_CASE_1)
-                .add(ModBlocks.CARD_CASE_2);
+                .add(ModBlocks.CARD_CASE_2_ZOM)
+                .add(ModBlocks.CARD_CASE_2_BOOK)
+                .add(ModBlocks.CARD_CASE_2_FOCUS);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.CARD_CASE_0)
                 .add(ModBlocks.CARD_CASE_1)
-                .add(ModBlocks.CARD_CASE_2);
+                .add(ModBlocks.CARD_CASE_2_ZOM)
+                .add(ModBlocks.CARD_CASE_2_BOOK)
+                .add(ModBlocks.CARD_CASE_2_FOCUS);
     }
 }

@@ -29,7 +29,9 @@ public class ModItemGroup {
                         entries.add(ModItems.SLUT);
                         entries.add(ModBlocks.CARD_CASE_0);
                         entries.add(ModBlocks.CARD_CASE_1);
-                        entries.add(ModBlocks.CARD_CASE_2);
+                        entries.add(ModBlocks.CARD_CASE_2_ZOM);
+                        entries.add(ModBlocks.CARD_CASE_2_BOOK);
+                        entries.add(ModBlocks.CARD_CASE_2_FOCUS);
                         entries.add(ModItems.SIWANG_ITEMS.get(0));
                         entries.add(ModItems.JINGSHUI_ITEMS.get(0));
                         entries.add(ModItems.HUMO_ITEMS.get(0));

@@ -40,9 +40,12 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
     public static final Block CARD_CASE_1 = registerBlock("block_card_case_1",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
-    public static final Block CARD_CASE_2 = registerBlock("block_card_case_2",
+    public static final Block CARD_CASE_2_ZOM = registerBlock("block_card_case_2_zom",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
-
+    public static final Block CARD_CASE_2_BOOK = registerBlock("block_card_case_2_book",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block CARD_CASE_2_FOCUS = registerBlock("block_card_case_2_focus",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
     /*
      ***** 下列方法的用途和实现无需关心 *****
      */
