@@ -32,6 +32,18 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         for (Item item : ModItems.CARD_ITEMS_FOCUS) {
             card_tag.add(item);
         }
+        FabricTagProvider<Item>.FabricTagBuilder zom_card_tag = getOrCreateTagBuilder(SLUTModTags.Items.CARD_LIST_ZOM);
+        for (Item item : ModItems.CARD_ITEMS_ZOM) {
+            zom_card_tag.add(item);
+        }
+        FabricTagProvider<Item>.FabricTagBuilder book_card_tag = getOrCreateTagBuilder(SLUTModTags.Items.CARD_LIST_BOOK);
+        for (Item item : ModItems.CARD_ITEMS_BOOK) {
+            book_card_tag.add(item);
+        }
+        FabricTagProvider<Item>.FabricTagBuilder focus_card_tag = getOrCreateTagBuilder(SLUTModTags.Items.CARD_LIST_FOCUS);
+        for (Item item : ModItems.CARD_ITEMS_FOCUS) {
+            focus_card_tag.add(item);
+        }
         FabricTagProvider<Item>.FabricTagBuilder disc_tag = getOrCreateTagBuilder(ItemTags.MUSIC_DISCS);
         for (Item item : ModItems.MUSIC_DISC_ITEMS) {
             disc_tag.add(item);
