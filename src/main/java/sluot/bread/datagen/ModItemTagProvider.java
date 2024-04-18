@@ -7,7 +7,7 @@ import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 import org.jetbrains.annotations.Nullable;
 import sluot.bread.item.ModItems;
-import sluot.bread.util.SLUTModTags;
+import sluot.bread.util.ModTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -22,7 +22,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
-        FabricTagProvider<Item>.FabricTagBuilder card_tag = getOrCreateTagBuilder(SLUTModTags.Items.CARD_LIST);
+        FabricTagProvider<Item>.FabricTagBuilder card_tag = getOrCreateTagBuilder(ModTags.Items.CARD_LIST);
         for (Item item : ModItems.CARD_ITEMS_ZOM) {
             card_tag.add(item);
         }
@@ -32,15 +32,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         for (Item item : ModItems.CARD_ITEMS_FOCUS) {
             card_tag.add(item);
         }
-        FabricTagProvider<Item>.FabricTagBuilder zom_card_tag = getOrCreateTagBuilder(SLUTModTags.Items.CARD_LIST_ZOM);
+        FabricTagProvider<Item>.FabricTagBuilder zom_card_tag = getOrCreateTagBuilder(ModTags.Items.CARD_LIST_ZOM);
         for (Item item : ModItems.CARD_ITEMS_ZOM) {
             zom_card_tag.add(item);
         }
-        FabricTagProvider<Item>.FabricTagBuilder book_card_tag = getOrCreateTagBuilder(SLUTModTags.Items.CARD_LIST_BOOK);
+        FabricTagProvider<Item>.FabricTagBuilder book_card_tag = getOrCreateTagBuilder(ModTags.Items.CARD_LIST_BOOK);
         for (Item item : ModItems.CARD_ITEMS_BOOK) {
             book_card_tag.add(item);
         }
-        FabricTagProvider<Item>.FabricTagBuilder focus_card_tag = getOrCreateTagBuilder(SLUTModTags.Items.CARD_LIST_FOCUS);
+        FabricTagProvider<Item>.FabricTagBuilder focus_card_tag = getOrCreateTagBuilder(ModTags.Items.CARD_LIST_FOCUS);
         for (Item item : ModItems.CARD_ITEMS_FOCUS) {
             focus_card_tag.add(item);
         }
