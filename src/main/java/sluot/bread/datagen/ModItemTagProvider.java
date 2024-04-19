@@ -44,6 +44,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         for (Item item : ModItems.CARD_ITEMS_FOCUS) {
             focus_card_tag.add(item);
         }
+        // 唱片标签
         FabricTagProvider<Item>.FabricTagBuilder disc_tag = getOrCreateTagBuilder(ItemTags.MUSIC_DISCS);
         for (Item item : ModItems.MUSIC_DISC_ITEMS) {
             disc_tag.add(item);
