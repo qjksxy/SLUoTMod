@@ -13,7 +13,7 @@ import sluot.bread.SLUoTMod;
  * 1. 在对应的类中创建 psf TagKey<> 常量
  * 2. 在 data/slut_mod/tags/ 中创建对应的 json 文件
  */
-public class SLUTModTags {
+public class ModTags {
     public static class Blocks {
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(SLUoTMod.MOD_ID, name));

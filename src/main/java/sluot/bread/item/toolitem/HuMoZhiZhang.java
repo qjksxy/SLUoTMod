@@ -2,7 +2,6 @@ package sluot.bread.item.toolitem;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -36,10 +35,10 @@ public class HuMoZhiZhang extends SwordItem {
         return TypedActionResult.success(user.getStackInHand(hand));
     }
 
-    // 使用护摩之杖攻击后，若玩家处于力量状态下，则获得持续时间为 4s(8s) 的如下状态：
-    // 1. 获得状态：生命提升 I 级，可叠加（生命上限提升 4 点）；
+    // 使用护摩之杖攻击后，若玩家处于力量状态下，则使能持续时间为 4s(8s) 的如下状态：
+    // 1. 获得状态：生命提升 I 级（生命上限提升 4 点），持续时间可叠加；
     // 2. 刷新状态：伤害吸收 I 级（增加 4 点额外生命）；
-    // 3. 获得状态：抗性提升 II 级，不可叠加（伤害减免 40%）
+    // 3. 获得状态：抗性提升 II 级（伤害减免 40%），不可叠加
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         PlayerEntity user = (PlayerEntity) attacker;
