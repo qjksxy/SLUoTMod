@@ -2,14 +2,12 @@ package sluot.bread.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import net.minecraft.item.Item;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
-import net.minecraft.loot.entry.ItemEntry;
-import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.entry.TagEntry;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import sluot.bread.block.ModBlocks;
-import sluot.bread.item.ModItems;
+import sluot.bread.util.ModTags;
 
 public class ModLootTablesProvider extends FabricBlockLootTableProvider {
 
@@ -26,21 +24,12 @@ public class ModLootTablesProvider extends FabricBlockLootTableProvider {
         LootPool.Builder card_case_2_book_rolls = LootPool.builder().rolls(ConstantLootNumberProvider.create(2.0f));
         LootPool.Builder card_case_2_focus_rolls = LootPool.builder().rolls(ConstantLootNumberProvider.create(2.0f));
 
-        for (Item item : ModItems.CARD_ITEMS_ZOM) {
-            card_case_0_rolls.with(ItemEntry.builder(item));
-            card_case_1_rolls.with(ItemEntry.builder(item));
-            card_case_2_zom_rolls.with(ItemEntry.builder(item));
-        }
-        for (Item item : ModItems.CARD_ITEMS_BOOK) {
-            card_case_0_rolls.with(ItemEntry.builder(item));
-            card_case_1_rolls.with(ItemEntry.builder(item));
-            card_case_2_book_rolls.with(ItemEntry.builder(item));
-        }
-        for (Item item : ModItems.CARD_ITEMS_FOCUS) {
-            card_case_0_rolls.with(ItemEntry.builder(item));
-            card_case_1_rolls.with(ItemEntry.builder(item));
-            card_case_2_focus_rolls.with(ItemEntry.builder(item));
-        }
+        card_case_0_rolls.with(TagEntry.expandBuilder(ModTags.Items.CARD_LIST));
+        card_case_1_rolls.with(TagEntry.expandBuilder(ModTags.Items.CARD_LIST));
+        card_case_2_zom_rolls.with(TagEntry.expandBuilder(ModTags.Items.CARD_LIST_ZOM));
+        card_case_2_book_rolls.with(TagEntry.expandBuilder(ModTags.Items.CARD_LIST_BOOK));
+        card_case_2_focus_rolls.with(TagEntry.expandBuilder(ModTags.Items.CARD_LIST_FOCUS));
+
         LootTable.Builder card_case_0_pool = LootTable.builder().pool(card_case_0_rolls);
         LootTable.Builder card_case_1_pool = LootTable.builder().pool(card_case_1_rolls);
         LootTable.Builder card_case_2_zom_pool = LootTable.builder().pool(card_case_2_zom_rolls);
