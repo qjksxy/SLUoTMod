@@ -24,9 +24,9 @@ public class ModItemGroup {
     public static final ItemGroup SLUT_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SLUoTMod.MOD_ID, "sluot_group"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.sluot_mod.sluot_group")).
-                    icon(() -> new ItemStack(ModItems.SLUT)).entries((displayContext, entries) -> {
+                    icon(() -> new ItemStack(ModItems.SLUOT)).entries((displayContext, entries) -> {
                         // 在此处将物品添加到物品组
-                        entries.add(ModItems.SLUT);
+                        entries.add(ModItems.SLUOT);
                         entries.add(ModBlocks.CARD_CASE_0);
                         entries.add(ModBlocks.CARD_CASE_1);
                         entries.add(ModBlocks.CARD_CASE_2_ZOM);

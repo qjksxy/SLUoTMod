@@ -6,8 +6,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import sluot.bread.block.ModBlocks;
@@ -23,7 +21,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SLUT)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SLUOT)
                 .input(Items.IRON_INGOT)
                 .input(Items.EGG)
                 .input(Blocks.CHERRY_LOG)
@@ -55,23 +53,26 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         for (int i = 1; i < 5; i++) {
             ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HUMO_ITEMS.get(i))
                     .input(ModItems.HUMO_ITEMS.get(0))
+                    .input(ModItems.HUMO_ITEMS.get(0))
                     .input(ModItems.HUMO_ITEMS.get(i - 1))
-                    .criterion(FabricRecipeProvider.hasItem(ModItems.HUMO_ITEMS.get(i - 1)),
-                            FabricRecipeProvider.conditionsFromItem(ModItems.HUMO_ITEMS.get(i - 1)))
+                    .criterion(FabricRecipeProvider.hasItem(ModItems.CITRINE),
+                            FabricRecipeProvider.conditionsFromItem(ModItems.CITRINE))
                     .offerTo(exporter);
 
             ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.JINGSHUI_ITEMS.get(i))
                     .input(ModItems.JINGSHUI_ITEMS.get(0))
+                    .input(ModItems.JINGSHUI_ITEMS.get(0))
                     .input(ModItems.JINGSHUI_ITEMS.get(i - 1))
-                    .criterion(FabricRecipeProvider.hasItem(ModItems.JINGSHUI_ITEMS.get(i - 1)),
-                            FabricRecipeProvider.conditionsFromItem(ModItems.JINGSHUI_ITEMS.get(i - 1)))
+                    .criterion(FabricRecipeProvider.hasItem(ModItems.CITRINE),
+                            FabricRecipeProvider.conditionsFromItem(ModItems.CITRINE))
                     .offerTo(exporter);
 
             ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SIWANG_ITEMS.get(i))
                     .input(ModItems.SIWANG_ITEMS.get(0))
+                    .input(ModItems.SIWANG_ITEMS.get(0))
                     .input(ModItems.SIWANG_ITEMS.get(i - 1))
-                    .criterion(FabricRecipeProvider.hasItem(ModItems.SIWANG_ITEMS.get(i - 1)),
-                            FabricRecipeProvider.conditionsFromItem(ModItems.SIWANG_ITEMS.get(i - 1)))
+                    .criterion(FabricRecipeProvider.hasItem(ModItems.CITRINE),
+                            FabricRecipeProvider.conditionsFromItem(ModItems.CITRINE))
                     .offerTo(exporter);
 
         }
@@ -81,9 +82,9 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("WWW")
                 .pattern("WRW")
                 .input('W', Blocks.COPPER_BLOCK)
-                .input('R', ModItems.SLUT)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.SLUT),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.SLUT))
+                .input('R', ModItems.SLUOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.SLUOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.SLUOT))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CARD_CASE_1)
                 .pattern("X X")
@@ -91,9 +92,9 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("WRW")
                 .input('X', ModTags.Items.CARD_LIST)
                 .input('W', Blocks.COPPER_BLOCK)
-                .input('R', ModItems.SLUT)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.SLUT),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.SLUT))
+                .input('R', ModItems.SLUOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.SLUOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.SLUOT))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CARD_CASE_2_BOOK)
@@ -102,9 +103,9 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("WRW")
                 .input('X', ModTags.Items.CARD_LIST_BOOK)
                 .input('W', Blocks.COPPER_BLOCK)
-                .input('R', ModItems.SLUT)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.SLUT),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.SLUT))
+                .input('R', ModItems.SLUOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.SLUOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.SLUOT))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CARD_CASE_2_FOCUS)
                 .pattern("XXX")
@@ -112,9 +113,9 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("WRW")
                 .input('X', ModTags.Items.CARD_LIST_FOCUS)
                 .input('W', Blocks.COPPER_BLOCK)
-                .input('R', ModItems.SLUT)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.SLUT),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.SLUT))
+                .input('R', ModItems.SLUOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.SLUOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.SLUOT))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CARD_CASE_2_ZOM)
                 .pattern("XXX")
@@ -122,9 +123,9 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("WRW")
                 .input('X', ModTags.Items.CARD_LIST_ZOM)
                 .input('W', Blocks.COPPER_BLOCK)
-                .input('R', ModItems.SLUT)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.SLUT),
-                        FabricRecipeProvider.conditionsFromItem(ModItems.SLUT))
+                .input('R', ModItems.SLUOT)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.SLUOT),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.SLUOT))
                 .offerTo(exporter);
     }
 }

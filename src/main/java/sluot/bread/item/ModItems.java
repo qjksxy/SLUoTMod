@@ -28,7 +28,7 @@ public class ModItems {
     public static final Item CITRINE = registerItem("item_citrine",
             new Item(new FabricItemSettings()));
     // SLUoT 徽章
-    public static final Item SLUT = registerItem("item_sluot",
+    public static final Item SLUOT = registerItem("item_sluot",
             new Item(new FabricItemSettings()));
 
     public static final List<Item> SIWANG_ITEMS = new ArrayList<>(List.of(

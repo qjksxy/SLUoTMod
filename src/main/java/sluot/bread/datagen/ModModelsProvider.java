@@ -27,7 +27,7 @@ public class ModModelsProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.SLUT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SLUOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.CITRINE, Models.GENERATED);
         for (Item item : ModItems.JINGSHUI_ITEMS) {
             itemModelGenerator.register(item, Models.HANDHELD);
